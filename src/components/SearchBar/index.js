@@ -23,6 +23,10 @@ export class SearchBar extends React.Component {
     if (keyword.length > 2) {
       this.debouncedSearch(keyword);
     }
+
+    if (keyword.length === 0) {
+      this.props.dispatch(setUsers([]));
+    }
   };
 
   render() {
