@@ -1,4 +1,4 @@
-import users from '../data/users';
+import users from '../data/users.json';
 
 const match = (keyword, strToMatch) =>
   strToMatch.toLowerCase().includes(keyword.toLowerCase());
